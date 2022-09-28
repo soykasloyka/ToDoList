@@ -1,3 +1,3 @@
 Basic to do list on JS.
 
-This project does not save data! If the page is reloaded, the entered data will be deleted.
+This project save data in browser! If the page will be reloaded, the entered data will be saved.
