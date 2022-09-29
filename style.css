@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(77,69,234,0.2), rgba(68,222,245,0.2));
+}
+
+ h1 {
+   text-align: center;
+ }
+
+ .flex-wrapper {
+   display: flex;
+   flex-flow:column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
+ .add-todo-wrapper {
+   display: flex;
+   width: 500px;
+   min-height: 40px;
+   align-items: center;
+   background-color: white;
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .input-wrapper {
+   width: 80%;
+ }
