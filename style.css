@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(12, 0, 232, 0.6), rgba(128, 0, 171, 0.6));
+  background-image: linear-gradient(to right, rgba(12, 0, 232, 0.5), rgba(128, 0, 171, 0.5));
 }
 
  h1 {
@@ -53,4 +53,63 @@ html, body {
   border: none;
   height: 25px;
   cursor: pointer;
+}
+
+.todo-item {
+  display: flex;
+  width: 500px;
+  min-height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #202124;
+}
+
+.todo-item.checked {
+  background-color: darkgrey;
+  opacity: 0.5;
+}
+
+.todo-item.delition {
+  animation: opacity 1s ease-in-out;
+}
+
+.description {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.buttons {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.buttons button {
+  outline: none;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 5px;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+
+  to {
+    opacity: 0;
+  }
 }
