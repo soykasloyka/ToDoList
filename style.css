@@ -39,7 +39,18 @@ html, body {
    height: 25px;
  }
 
+ .button-wrapper {
+   width: 20%;
+   display: flex;
+   justify-content: flex-end;
+ }
+
 .button-wrapper button {
   width: 80%;
-  background-color:
+  background-color: #969ba1;
+  color: black;
+  outline: none;
+  border: none;
+  height: 25px;
+  cursor: pointer;
 }
