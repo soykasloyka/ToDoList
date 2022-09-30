@@ -23,10 +23,17 @@ const createTemplate = (task, index) => {
     </div>
   `
 }
+//Completed tasks are sent to the end of the list
+const filterTasks = () => {
+  const activeTasks = tasks.length && tasks.filter(item => item.completed == false);
+  const completedTasks = tasks.length && tasks.filter(item => item.completed == true);
+  tasks = [...activeTasks,...completedTasks];
+}
 
 const fillHtmlList = () => {
   todosWrapper.innerHTML = "";
   if(tasks.length > 0) {
+    filterTasks();
     tasks.forEach((item, index) => {
       todosWrapper.innerHTML += createTemplate(item, index);
     });
@@ -65,5 +72,5 @@ todoItemElems[index].classList.add('delition');
     tasks.splice(index, 1);
     updateLocal();
     fillHtmlList();
-  },700)
+  },500)
 }
