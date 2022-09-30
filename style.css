@@ -59,11 +59,11 @@ html, body {
   display: flex;
   width: 500px;
   min-height: 50px;
-  border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px;
   background-color: #202124;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .todo-item.checked {
@@ -80,6 +80,7 @@ html, body {
   display: flex;
   align-items: center;
   color: white;
+  font-family: arial;
 }
 
 .buttons {
